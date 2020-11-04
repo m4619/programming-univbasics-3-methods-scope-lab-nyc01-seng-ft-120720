@@ -13,10 +13,9 @@ def link
   puts "It's Dangerous To Go Alone! Take This."
 end
 
-describe "all_phrases" do
-  it "puts out all of the previous catch phrases" do
-    expect{all_phrases}.to output(/It's-a me, Mario!\n/).to_stdout
-    expect{all_phrases}.to output(/Thank You Mario! But Our Princess Is In Another Castle!\n/).to_stdout
-    expect{all_phrases}.to output(/It's Dangerous To Go Alone! Take This.\n/).to_stdout
-  end
+def all_phrases
+  phrase = "It's-a me, Mario!"
+  puts phrase
+  puts status
+  puts "It's Dangerous To Go Alone! Take This."
 end
